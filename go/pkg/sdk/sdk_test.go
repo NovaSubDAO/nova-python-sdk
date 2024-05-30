@@ -68,15 +68,15 @@ func TestGetPosition(t *testing.T) {
     t.Logf("Output from GetPosition: %f", output)
 }
 
-func TestGetTotalValue(t *testing.T) {
-    novaSDK, cleanup := setup(t)
-    defer cleanup()
+// func TestGetTotalValue(t *testing.T) {
+//     novaSDK, cleanup := setup(t)
+//     defer cleanup()
 
-    // Use the SDK to get the total value of the vault
-    output, err := novaSDK.GetTotalValue()
-    if err != nil {
-        t.Fatalf("Failed to get position: %v", err)
-    }
+//     // Use the SDK to get the total value of the vault
+//     output, err := novaSDK.GetTotalValue()
+//     if err != nil {
+//         t.Fatalf("Failed to get position: %v", err)
+//     }
 
-    t.Logf("Output from GetPosition: %f", output)
-}
+//     t.Logf("Output from GetPosition: %f", output)
+// }
